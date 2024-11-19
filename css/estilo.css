@@ -1,0 +1,365 @@
+/*configurar para todo o site usamos o "*" antes do "{"*/
+*{
+    font-family: "Poppins", sans-serif, Verdana, Geneva, Tahoma;/*deixa outras caso nao carregue a do google (Montserrat)*/
+    margin: 0;
+    padding: 0;
+    border:0;
+
+}
+
+
+
+main {
+    /*ajustes para que o conteudo da pagina fique centralizada e alinhada com o zoom*/
+    background: url("../img/bg_main\ 1.png")  no-repeat center top;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    border: 0;
+}
+
+header{
+    width: 1280px;
+    height: 533px;
+}
+
+header h1{
+    float: left;
+}
+
+header h1 a{
+    display: block;
+    height: 33px;
+    padding-top: 80px;
+    padding-left: 10px;
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 40% */
+    text-decoration: none;
+}
+
+header h1 a:hover{
+    height: 30px;
+    border-bottom: #0b43df solid 3px ;
+}
+
+.box{
+    width: 1280px;
+    height: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    background: #103578;
+    padding: 5px 50px 5px 50px;
+}
+
+.box img{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 187.1px;
+    height: 45.2px;
+}
+
+
+header nav{
+    float: left; /*para deixar o menu a direita*/
+}
+
+header nav ul{ 
+    margin-left: 220px;
+    display: flex; /*faz uma losta*/
+    flex-direction: row; /*deixa todos os elementos do flex lado a lado */
+    list-style: none; /*tira as bolinhas ou outros "enfeites"*/
+}
+
+header nav ul li a{
+    display: block;
+    height: 27px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none; /*tira o underline*/ 
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #FCC24F ;
+
+}
+
+.compre p{
+    margin-top: 113px;
+    margin-left: 23px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.compre h2{
+    color: #FFF;
+    margin-left: 23px;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+input[type=button] {
+    margin-right: 1067px;
+    margin-left: 23px;
+    width: 190px;
+    height: 40px;
+    border-radius: 6px;
+    background: #FCC24F;
+
+}
+
+#cruzeiro{  
+    position:absolute;
+    margin-top: 427px;
+    display: block;
+    width: 956px;
+    height: 290px;
+    border-radius: 7px;
+    background: #FFF;
+    box-shadow: 2px -12px 6px 6px rgba(0, 0, 0, 0.26);
+}
+#cruzeiro h2{
+    margin-top: 40px;
+    margin-left: 45px;
+    color: #103578;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 80% */
+}
+
+#cruzeiro #destino{
+    margin-right: 10px;
+    margin-top: 40px;
+    flex-shrink: 0;
+    display: inline-flex;
+    height: 39px;
+    padding: 9px 11px 9px 10px;
+    justify-content: center;
+    align-items: flex-start;    
+    gap: 37px;
+    border-radius: 3px;
+    border: 0.5px solid #B9B9B9;
+    background: #FFF;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05) inset;
+    }
+
+#cruzeiro #pontoembarque{
+    margin-right: 10px;
+    margin-top: 40px;
+    display: inline-flex;
+    height: 39px;
+    padding: 9px 11px 9px 10px;
+    justify-content: center;
+    align-items: flex-start;    
+    gap: 37px;
+    border-radius: 3px;
+    border: 0.5px solid #B9B9B9;
+    background: #FFF;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05) inset;
+    }
+
+#cruzeiro #passageiros{
+    margin-left: 50px;
+    margin-top: 40px;
+    display: inline-flex;
+    height: 39px;
+    padding: 9px 11px 9px 10px;
+    justify-content: center;
+    align-items: flex-start;    
+    gap: 37px;
+    border-radius: 3px;
+    border: 0.5px solid #B9B9B9;
+    background: #FFF;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05) inset;
+    }
+    
+
+input[type=submit]{
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+    width: 190px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #103578;
+}
+
+#pacotes{
+    margin-top: 130px;
+    width: 954px;
+    height: 534px;
+    padding: 25px 50px 25px 50px;
+
+}
+
+#viagenspacotes{
+    width: 303px;
+    height: 466px;
+    display: flex;
+    flex-direction: row;
+}
+
+#pacotes h2{
+    color: #103578;
+    position: relative;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.destinos{
+    width: 303px;
+    height: 500px;
+    margin-right: 23px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.destinos img{
+    width: 303px;
+    height: 256px;
+    border-radius: 16px 16px 0px 0px;
+
+}
+
+.destinos h3{
+    width: 219px;
+    margin-left: 17px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #1D1D1B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.destinos p{
+    width: 220px; /*ajeitar*/
+    margin-left: 17px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+
+}
+
+.destinos h4{
+    margin-left: 17px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #000;    
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#nossosnavios{
+    background: url("../img/star-of-the-seas-sunset-sailing.png")lightgray 50% / cover no-repeat; /*colocar imagem no background*/
+    margin-top: 40px;
+    width: 1280px;
+    height: 601px;
+    padding: 25px 50px 25px 50px;
+}
+
+#nossosnavios h2{
+    margin-left: 165px;
+    margin-bottom: 8px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#navioscontainer{
+    /*background: url(../img/icon-of-the-seas-aerial-aft-night.png) lightgray 50% / cover no-repeat;*/
+    width: 305px;
+    margin-left: 164px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navios{
+    position: relative;
+}
+
+.navios img{
+    width: 305px;
+    height: 482px;
+    margin-right: 17px;
+
+}
+
+.navios h3{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 285px;
+    height: 54px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+footer{
+    width: 1280px;
+    height: 100px;
+    background: #103578;
+    padding: 5px 50px 5px 50px;
+
+}
+
+footer p{
+    padding-top: 40px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+

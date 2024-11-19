@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- usando fonte Poppins do googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- linkando o css -->
+    <link href="css/estilo.css" rel="stylesheet">
+    
+
+    <!-- o titulo da pagina web -o que vai aparecer na guia do navegador -->
+    <title>Royal Caribbean</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="box"><img class="a-logo" src="img/h1_a_logo.png" /><h1><a href="#"></a></h1></div>
+            <nav>
+                <ul>
+                <li>
+                    <a href="#">encontre seu cruzeiro</a>
+                </li>
+                <li>
+                    <a href="#">ofertas</a>
+                </li>
+                <li>
+                    <a href="#">nossos navios</a>
+                </li>
+                <li>
+                    <a href="#">destinos</a>
+                </li>
+                <li>
+                    <a href="#">gerenciar</a>
+                </li>
+                <li>
+                    <a href="#">meu cruzeiro</a>
+                </li>
+                <li>
+                    <a href="#">login</a>
+                </li>
+                </ul>
+            </nav>
+            <div class="compre">
+                <p>corra e aproveite</p>
+                <h2>até R$ 3.045 de desconto</h2>
+                <form>
+                    <input type="button" value="Compre Agora">
+                </form>
+            </div>
+
+        </header>
+
+        <section id="cruzeiro">
+            <div class="destino">
+                <div class="reserva">
+                <h2>Reserve Agora</h2>
+            </div>
+                <form>
+                    <!-- <img src="img/Arrows(2).png" alt="Arrows"> -->
+                    <label for="destino">Destino</label> 
+                    <select id="destino" name="destinolist" form="destinolistform">
+                        <option value="bahamas">Bahamas</option>
+                        <option value="caribe">Caribe</option>
+                        <option value="barbados">Barbados</option>
+                   
+                    </select>
+                
+
+                    <!-- <img src="img/Arrows(2).png" alt="Arrows"> -->
+                    <label for="pontoembarque">Ponto de Embarque</label>
+                    <select id="pontoembarque" name="embarquelist" form="embarquelistform">
+                        <option value="orlando">Orlando, Flórida</option>
+                        <option value="forteLauderdale">Fort Lauderdale, Flórida </option>
+                        <option value="miami">Miami, Flórida</option>
+                        <option value="labadee">Labadee, Haitis</option>
+                        
+                    </select>
+              
+
+                    <label for="datetravel">Departure date</label>
+                    <input type="date" id="datetravel" name="datetravel"><br /> 
+
+                    
+                    <!-- <img src="img/Arrows(2).png" alt="Arrows" -->
+                    <label for="passageiros">Passageiros</label>
+                    <select id="passageiros" name="passageiros" form="passageirosform">
+                        <option value="3adultos">3 Adultos</option>
+                        <option value="2adultos">2 Adultos</option>
+                        <option value="1adulto">1 Adulto</option>
+                        <option value="2adultos1crianca">2 Adultos e 1 Criança</option>
+                        <option value="2adultos2crianca">2 Adultos e 2 Crianças</option>
+                        <option value="1adultos1crianca">1 Adulto e 1 Criança</option>
+                        <option value="1adulto2crianca">1 Adulto e 2 Crianças</option>
+                    </select>
+
+                    <input type="submit" id ="booknow" name="booknow" value="Buscar">
+
+                </form>
+            </div>
+        <div id="checkyou"></div>
+    
+ 
+         </section>
+
+        <section id="pacotes">
+
+            <h2>Corra e aproveite</h2>
+            <div id="viagenspacotes">
+                    
+                <div class="destinos">
+                    <img src="img/arrivals-plaza-perfect-day-at-cococay-aerial-view.png" alt="bahamas">
+                    <h3>4 Night Bahamas & Perfect Day Cruise</h3>
+                    <p>A partir de*</p>
+                    <h4>R$ 2.500,00/pessoa</h4>
+                    <p>Partindo de Orlando (Porto Canaveral), Flórida <br /> <!--usar o br para quebra de linha-->
+                        A bordo Utopia of the Seas</p>
+                </div>
+
+                <div class="destinos">
+                    <img src="img/arrivals-plaza-perfect-day-at-cococay-aerial-view (1).png" alt="getaway">
+                    <h3>Perfect Day Getaway Cruise</h3>
+                    <p>A partir de*</p>
+                    <h4>R$ 4.500,00/pessoa</h4>
+                    <p>Fort Lauderdale, Flórida <br /> 
+                        A bordo Liberty of the Seas</p>
+                </div>
+
+                <div class="destinos">
+                    <img src="img/arrivals-plaza-perfect-day-at-cococay-aerial-view (2).png" alt="caribbean">
+                    <h3>Short Caribbean Cruise</h3>
+                    <p>A partir de*</p>
+                    <h4>R$ 5.500,00/pessoa</h4>
+                    <p>Partindo de Miami, Flórida Labadee, Haiti <br />
+                     A bordo Independence of the Seas</p>
+                </div>
+        </div>
+
+        </section>
+
+        <section id="nossosnavios">
+            <h2>Nossos navios</h2>
+            <div id="navioscontainer">
+                
+
+                <div class="navios">
+                    <img src="img/icon-of-the-seas-aerial-aft-night.png" alt="icon">
+                    <h3>Icons of the seas</h3>
+                    
+                </div>
+
+                <div class="navios">
+                    <img src="img/utopia-of-the-seas-sunseet-sailing-portrait-new.png" alt="utopia">
+                    <h3>Utopia of the seas</h3>
+                </div>
+
+                <div class="navios">
+                    <img src="img/star-of-the-seas-aft-sailing-night-time-up.png" alt="star">
+                    <h3>Star of the seas</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>© 2024 Royal Caribbean International</p>
+        </footer>
+
+    </main>
+</body>
+</html>
